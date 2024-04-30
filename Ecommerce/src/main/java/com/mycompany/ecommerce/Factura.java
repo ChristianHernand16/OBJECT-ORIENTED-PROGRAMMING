@@ -20,5 +20,14 @@ public class Factura {
     private double totalsindescuento;
     private double subtotalVenta;
 
+    public Factura(double descuento, double preciobajo, double precioalto, double totalcondescunento, double totalsindescuento, double subtotalVenta) {
+        this.descuento = descuento;
+        this.preciobajo = preciobajo;
+        this.precioalto = precioalto;
+        this.totalcondescunento = totalcondescunento;
+        this.totalsindescuento = totalsindescuento;
+        this.subtotalVenta = subtotalVenta;
+    }
+
     
 }

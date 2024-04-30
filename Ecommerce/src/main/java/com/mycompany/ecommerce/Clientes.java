@@ -9,6 +9,7 @@ package com.mycompany.ecommerce;
  * @author chris
  */
 public class Clientes {
+
     
     private String nombre;
     private String apellido;
@@ -16,4 +17,19 @@ public class Clientes {
     private String direccion;
     private String celular;
     private String email;
+  
+
+    
+    public Clientes(String nombre, String apellido, String cedula, String direccion, String celular, String email) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.cedula = cedula;
+        this.direccion = direccion;
+        this.celular = celular;
+        this.email = email;
+    }
+    
+    
+    
+    
 }

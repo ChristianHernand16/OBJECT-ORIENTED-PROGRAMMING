@@ -5,17 +5,17 @@
 package com.mycompany.ecommerce;
 
 
- public class Productos {
-    
-    private String nombre;
-    private int cantidad;
-    private double precio;
+ public class Producto {
 
-    public Productos(String nombre, int cantidad, double precio) {
+    private String nombre;
+    private String descripcion;
+
+
+    public Producto(String nombre, String descripcion) {
         this.nombre = nombre;
-        this.cantidad = cantidad;
-        this.precio = precio;
+        this.descripcion = descripcion;
     }
+    
 
       
    }

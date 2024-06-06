@@ -11,19 +11,16 @@ package Clases_EjAbstraccion;
 
 import Clases_Abstractas.SistemaPago;
 
-public class PagoTransferenciaBancaria extends SistemaPago {
+public class PagoTransferenciaBancaria implements SistemaPago {
     
-       @Override
     public void iniciarPago() {
         System.out.println("Iniciando Pago por medio de Transferencia Bancaria ");
     }
 
-    @Override
     public void verificarPago() {
         System.out.println("Pago realizado Correctamete por medio de Transferencia Bancaria");
     }
 
-    @Override
     public void confirmarPago() {
         System.out.println("Pago confirmado Correctamete por medio de Transferencia Bancaria");
     }

@@ -16,4 +16,7 @@ public abstract class SistemaPago1 {
 
     public abstract void confirmarPago();
     
+     public void eliminarPago(){
+         
+     }
 }

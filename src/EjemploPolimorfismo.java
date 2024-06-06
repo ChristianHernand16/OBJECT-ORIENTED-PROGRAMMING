@@ -16,9 +16,9 @@ public class EjemploPolimorfismo {
         
         
         
-        ProductoVip productoVip=new ProductoVip(3, "Macbook", 100);
+        //ProductoVip productoVip=new ProductoVip(3, "Macbook", 100);
         
-        System.out.println("Precio Producto Vip " +  productoVip.calcularPrecio()); //15%
-        productoVip.entrega();
+        //System.out.println("Precio Producto Vip " +  productoVip.calcularPrecio()); //15%
+        //productoVip.entrega();
     }
 }

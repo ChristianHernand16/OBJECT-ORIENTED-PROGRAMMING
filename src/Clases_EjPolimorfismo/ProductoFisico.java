@@ -1,26 +1,28 @@
 package Clases_EjPolimorfismo;
 
-import ClasesBase.Producto;
+import ClasesBase.Producto2;
 
 
 
-public class ProductoFisico extends Producto {
 
-    public ProductoFisico(int ID,String nombre,String descripcion) {
-        super(ID, nombre, descripcion, ID, ID, ID);
+public class ProductoFisico extends Producto2 {
+
+
+    public ProductoFisico(int ID) {
+        super(ID);
     }
 
     public ProductoFisico(int ID, String Nombre, double precio) {
-        super(ID, Nombre, Nombre, precio, ID, precio);
+        super(ID, Nombre, precio);
     }
 
-
+    @Override
     public double calcularPrecio() {
-      return calcularIVAEnDolares()*0.12;
+        return this.precio +  this.precio * 0.12;
     }
 
-
+    @Override
     public void entrega() {
-        System.out.println("Entrega por Servientrega");
+        System.out.println("Entrega por Courier");
     }
 }

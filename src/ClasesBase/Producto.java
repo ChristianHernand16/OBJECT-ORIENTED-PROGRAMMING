@@ -4,10 +4,7 @@
  */
 package ClasesBase;
 
-
 public class Producto {
-
-
 
     private int id;
     private String nombre;
@@ -25,13 +22,12 @@ public class Producto {
         this.tasaIVA = tasaIVA;
     }
 
-
     public double calcularIVAEnDolares() {
         return precio * tasaIVA / 100;
     }
 
     public boolean existeStock() {
-        return this.stock>0;
+        return this.stock > 0;
     }
 
     public void agregarAlStock(int cantidad) {
@@ -46,11 +42,17 @@ public class Producto {
         }
     }
 
+    public void setPrecio(double precio) {
+        if (precio >= 0) {
+            this.precio -= precio;
+        } else {
+            throw new IllegalArgumentException("El precio no puede ser negativo");
+        }
+    }
+
 
     public String toString() {
         return "Producto[id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion
                 + ", precio=" + precio + ", stock=" + stock + "]";
     }
 }
-
-   

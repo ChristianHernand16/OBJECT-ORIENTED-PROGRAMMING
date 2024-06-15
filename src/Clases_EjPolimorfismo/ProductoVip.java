@@ -23,7 +23,7 @@ public class ProductoVip extends Producto2 {
 
     @Override
     public void entrega() {
-        System.out.println("Entrega por Servicio VIP");
+        System.out.println("Entrega por DHL");
     }
 
 }

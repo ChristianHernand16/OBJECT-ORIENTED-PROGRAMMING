@@ -24,43 +24,41 @@ public class EjemploPatrones {
         System.out.println(configuracionSistema.getParamBD("user"));
         System.out.println(configuracionSistema.getParamUI("idioma"));
 
-        configuracionSistema.setParamBD("user", "ecommerce_user");
+        configuracionSistema.setParamBD("user", "Compras");
         System.out.println(configuracionSistema.getParamBD("user"));
-
-
 
         Map<String, String> parametrosProductoDigital = new HashMap<>();
         parametrosProductoDigital.put("ID", "1");
-        parametrosProductoDigital.put("Nombre", "Membresìa InternetTV");
+        parametrosProductoDigital.put("Nombre", "Membresìa Perfume CALVIN KLEIN Escape men EDT");
         parametrosProductoDigital.put("precio", "100");
         Producto2 productoDigital = ProductoFactory.crearProducto("digital", parametrosProductoDigital);
 
         Map<String, String> parametrosProductoFisico = new HashMap<>();
         parametrosProductoFisico.put("ID", "1");
-        parametrosProductoFisico.put("Nombre", "Membresìa InternetTV");
+        parametrosProductoFisico.put("Nombre", "Membresìa HUGO BOSS Intense EDP");
         parametrosProductoFisico.put("precio", "100");
         Producto2 productoFisico= ProductoFactory.crearProducto("fisico", parametrosProductoFisico );
 
         Map<String, String> parametrosProductoVIP = new HashMap<>();
         parametrosProductoFisico.put("ID", "1");
-        parametrosProductoFisico.put("Nombre", "Membresía Golden");
+        parametrosProductoFisico.put("Nombre", "Membresía Perfume Carolina Herrera 212 Heroes Men EDT");
         parametrosProductoFisico.put("precio", "100");
         parametrosProductoFisico.put("bonus", "35%");
         Producto2 productoVIP= ProductoFactory.crearProducto("vip", parametrosProductoFisico );
 
 
-        System.out.println("Precio Producto Digital " +  productoDigital.calcularPrecio()); //10%
-        System.out.println("Precio Producto Fìsico " +   productoFisico.calcularPrecio());  //12%
-        System.out.println("Precio Producto VIP " +   productoVIP.calcularPrecio());  //12%
+        System.out.println("Precio Producto Digital " +  productoDigital.calcularPrecio()); 
+        System.out.println("Precio Producto Fìsico " +   productoFisico.calcularPrecio()); 
+        System.out.println("Precio Producto VIP " +   productoVIP.calcularPrecio());  
 
         productoDigital.entrega();
         productoFisico.entrega();
         productoVIP.entrega();
         
         BankCuenta bankAccount = new BankCuenta();
-        GastosBancarios bankExpense1 = new GastosBancarios("commission", 0.11d);
-        GastosBancarios bankExpense2 = new GastosBancarios("expense", 0.22d);
-        GastosBancarios bankExpense3 = new GastosBancarios("compensation", 0.33d);
+        GastosBancarios bankExpense1 = new GastosBancarios("commission", 0.15d);
+        GastosBancarios bankExpense2 = new GastosBancarios("expense", 0.25d);
+        GastosBancarios bankExpense3 = new GastosBancarios("compensation", 0.35d);
         
         bankAccount.addObserver(bankExpense1);
         bankAccount.addObserver(bankExpense2);

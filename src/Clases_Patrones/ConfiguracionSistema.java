@@ -21,13 +21,13 @@ public class ConfiguracionSistema {
 
         parametrosConexionBD = new HashMap<>();
         parametrosConexionBD.put("host", "localhost");
-        parametrosConexionBD.put("database", "ecommerce");
+        parametrosConexionBD.put("database", "compras");
         parametrosConexionBD.put("user", "cristian");
-        parametrosConexionBD.put("password", "ecommerce_password");
+        parametrosConexionBD.put("password", "cuenca");
 
         configuracionesUI = new HashMap<>();
         configuracionesUI.put("tema", "oscuro");
-        configuracionesUI.put("idioma", "inglés");
+        configuracionesUI.put("idioma", "Espaniol");
     }
 
     public static ConfiguracionSistema getInstance() {

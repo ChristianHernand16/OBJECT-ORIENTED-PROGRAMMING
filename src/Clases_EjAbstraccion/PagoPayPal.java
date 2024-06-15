@@ -18,14 +18,14 @@ public class PagoPayPal implements SistemaPago {
 
     
     public void iniciarPago() {
-        System.out.println("Iniciando Pago con PayPal");
+        System.out.println("Iniciando Pago con PayPal ");
     }
 
     public void verificarPago() {
-        System.out.println("Pago realizado Correctamete con PayPal");
+        System.out.println("Pago realizado Correctamete con PayPal ");
     }
 
     public void confirmarPago() {
-        System.out.println("Pago confirmado Correctamete con PayPal");
+        System.out.println("Pago confirmado Correctamete con PayPal ");
     }
 }

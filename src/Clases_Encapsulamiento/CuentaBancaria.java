@@ -8,10 +8,7 @@ package Clases_Encapsulamiento;
  *
  * @author chris
  */
-
-
 public class CuentaBancaria {
-
     private String numeroCuenta;
     private double saldo;
 
@@ -25,22 +22,19 @@ public class CuentaBancaria {
         this.saldo = 0;
     }
 
-
     public String getNumeroCuenta() {
         return numeroCuenta;
     }
-
 
     public double getSaldo() {
         return saldo;
     }
 
-
     public void depositar(double cantidad) {
         if (cantidad > 0) {
             setSaldo(getSaldo() + cantidad);
         } else {
-            throw new IllegalArgumentException("La cantidad a depositar debe ser positiva");
+            throw new IllegalArgumentException("La cantidad siempre debe ser positiva");
         }
     }
 
@@ -48,7 +42,7 @@ public class CuentaBancaria {
         if (cantidad > 0 && cantidad <= getSaldo()) {
             setSaldo(getSaldo() - cantidad);
         } else {
-            throw new IllegalArgumentException("Cantidad a retirar no válida");
+            throw new IllegalArgumentException("Error");
         }
     }
 

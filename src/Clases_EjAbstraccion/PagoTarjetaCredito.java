@@ -13,14 +13,14 @@ import Clases_Abstractas.SistemaPago;
 public class PagoTarjetaCredito implements SistemaPago {
 
     public void iniciarPago() {
-        System.out.println("Iniciando Pago por medio de Tarjetas  Crédito");
+        System.out.println("Iniciando Pago por medio de Tarjetas  Crédito ");
     }
 
     public void verificarPago() {
-        System.out.println("Pago realizado Correctamete por medio de Tarjetas de Crédito");
+        System.out.println("Pago realizado Correctamete por medio de Tarjetas de Crédito ");
     }
 
     public void confirmarPago() {
-        System.out.println("Pago confirmado Correctamete por medio de Tarjetas de Crédito");
+        System.out.println("Pago confirmado Correctamete por medio de Tarjetas de Crédito ");
     }
 }

@@ -8,26 +8,29 @@ public class EjemploAbstraccion {
 
     public static void main(String[] args) {
 
-// Digital
+        System.out.println("_____________________________________________________________________");
         GestorInventario inventarioDigital = new InventarioDigital(10);
         System.out.println("Inventario Digital contiene la cantidad de " + inventarioDigital.getCantidad());
-        inventarioDigital.agregarProducto("eBook de Python", 50);
-        inventarioDigital.elimiProducto("eBook de Python");
-        inventarioDigital.actualizarStock("eBook de Python", 25);
+        inventarioDigital.agregarProducto("Membresia Perfume CALVIN KLEIN Escape men EDT ", 50);
+        inventarioDigital.elimiProducto("Membresia Perfume CALVIN KLEIN Escape men EDT ");
+        inventarioDigital.actualizarStock("Membresia Perfume CALVIN KLEIN Escape men EDT ", 20);
+        System.out.println("_____________________________________________________________________");
 
-        //Fisico
+        System.out.println("_____________________________________________________________________");
         GestorInventario inventarioFisico = new InventarioFisico(20);
         System.out.println("Inventario Físico contiene la cantidad de " + inventarioFisico.getCantidad());
-        inventarioFisico.agregarProducto("Libro de Python", 30);
-        inventarioFisico.elimiProducto("Libro de Python");
-        inventarioFisico.actualizarStock("Libro de Python", 15);
+        inventarioFisico.agregarProducto("HUGO BOSS Intense EDP", 30);
+        inventarioFisico.elimiProducto("HUGO BOSS Intense EDP");
+        inventarioFisico.actualizarStock("HUGO BOSS Intense EDP", 15);
+        System.out.println("_____________________________________________________________________");
 
-        //vip
+        System.out.println("_____________________________________________________________________");
         GestorInventario inventarioVIP = new InventarioVIP(30);
         System.out.println("Inventario VIP contiene la cantidad de " + inventarioVIP.getCantidad());
-        inventarioVIP.agregarProducto("Libro BestSeller de Python", 30);
-        inventarioVIP.elimiProducto("Libro BestSeller de Python"); 
-        inventarioVIP.actualizarStock("Libro BestSeller de Python", 15);
+        inventarioVIP.agregarProducto("Carolina Herrera 212 Heroes Men EDT", 30);
+        inventarioVIP.elimiProducto("Carolina Herrera 212 Heroes Men EDT");
+        inventarioVIP.actualizarStock("Carolina Herrera 212 Heroes Men EDT", 15);
+        System.out.println("_____________________________________________________________________");
 
     }
 }

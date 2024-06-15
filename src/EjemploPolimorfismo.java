@@ -5,20 +5,17 @@ import Clases_EjPolimorfismo.ProductoVip;
 public class EjemploPolimorfismo {
     public static void main(String[] args) {
 
-        ProductoDigital productoDigital = new ProductoDigital(1, "Membresìa InternetStarplus", 100);
-        System.out.println("Precio Producto Digital " +  productoDigital.calcularPrecio()); //10%
+        ProductoDigital productoDigital = new ProductoDigital(1, "Perfume CALVIN KLEIN Escape men EDT ", 100);
+        System.out.println("Precio Producto Digital Perfume CALVIN KLEIN Escape men EDT el precio es " + productoDigital.calcularPrecio());
         productoDigital.entrega();
-        
-        
-        ProductoFisico productoFisico= new ProductoFisico(2, "TV100 pulgadas", 100);
-        System.out.println("Precio Producto Fìsico " +   productoFisico.calcularPrecio());  //12%
+
+        ProductoFisico productoFisico = new ProductoFisico(2, "HUGO BOSS Intense EDP", 100);
+        System.out.println("Precio Producto Fìsico HUGO BOSS Intense EDP el precio es " + productoFisico.calcularPrecio());
         productoFisico.entrega();
-        
-        
-        
-        //ProductoVip productoVip=new ProductoVip(3, "Macbook", 100);
-        
-        //System.out.println("Precio Producto Vip " +  productoVip.calcularPrecio()); //15%
-        //productoVip.entrega();
+
+        ProductoVip productovp = new ProductoVip(3, "Perfume Carolina Herrera 212 Heroes Men EDT ", 120.9, "100");
+
+        System.out.println("Precio Producto Vip Carolina Herrera 212 Heroes Men EDT el precio es " + productovp.calcularPrecio());
+        productovp.entrega();
     }
 }

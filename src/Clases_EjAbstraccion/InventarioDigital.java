@@ -33,11 +33,11 @@ public class InventarioDigital extends GestorInventario {
 
     @Override
     public void elimiProducto(String producto) {
-        System.out.println("Eliminando del inventario digital."+ producto +"");
+        System.out.println("Eliminando del inventario digital."+ producto + "");
     }
 
     @Override
     public void actualizarStock(String producto, int nuevaCantidad) {
-        System.out.println("Actualizando stock de  unidades en el inventario digital prodcuto" + producto + " nueva cantidad " + nuevaCantidad + "");
+        System.out.println("Actualizando stock de  unidades en el inventario digital prodcuto " + producto + " nueva cantidad " + nuevaCantidad + "");
     }
 }

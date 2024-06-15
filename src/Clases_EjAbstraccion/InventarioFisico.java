@@ -20,7 +20,7 @@ public class InventarioFisico extends GestorInventario {
 
     @Override
     public void agregarProducto(String producto, int cantidad) {
-        System.out.println("Agregar inventario físico cantidad" + cantidad + "producto" + producto);
+        System.out.println("Agregar inventario físico cantidad " + cantidad + " producto " + producto);
     }
 
     @Override
@@ -30,6 +30,6 @@ public class InventarioFisico extends GestorInventario {
 
     @Override
     public void actualizarStock(String producto, int nuevaCantidad) {
-        System.out.println("Actualizando stock y unidades en el inventario físico producto" + producto + " cantidad " + nuevaCantidad );
+        System.out.println("Actualizando stock y unidades en el inventario físico producto " + producto + " cantidad " + nuevaCantidad );
     }
 }

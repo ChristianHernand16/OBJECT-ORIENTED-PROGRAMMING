@@ -4,7 +4,7 @@ import ClasesBase.Producto2;
 
 
 
-
+//Polimorfismo
 public class ProductoFisico extends Producto2 {
 
 
@@ -23,6 +23,6 @@ public class ProductoFisico extends Producto2 {
 
     @Override
     public void entrega() {
-        System.out.println("Entrega por Courier");
+        System.out.println("Entrega por Servi Entrega");
     }
 }

@@ -24,6 +24,6 @@ public class ProductoDigital extends Producto2 {
 
     @Override
     public void entrega() {
-        System.out.println("Entrega Digital");
+        System.out.println("Entrega por medio  Digital");
     }
 }

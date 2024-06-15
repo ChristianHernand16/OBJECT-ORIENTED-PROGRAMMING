@@ -20,7 +20,7 @@ public class InventarioVIP extends GestorInventario {
     @Override
     public void agregarProducto(String producto, int cantidad) {
       
-          System.out.println("Agregar inventario VIP físico cantidad" + cantidad + "producto" + producto);
+          System.out.println("Agregar inventario VIP físico cantidad " + cantidad + " producto " + producto);
     }
 
     @Override
@@ -32,6 +32,6 @@ public class InventarioVIP extends GestorInventario {
     @Override
     public void actualizarStock(String producto, int nuevaCantidad) {
   
-         System.out.println("Actualizando stock de  unidades en el inventario VIP producto" + producto + " nueva cantidad " + nuevaCantidad + "");
+         System.out.println("Actualizando stock de  unidades en el inventario VIP producto " + producto + " nueva cantidad " + nuevaCantidad + "");
     }
 }

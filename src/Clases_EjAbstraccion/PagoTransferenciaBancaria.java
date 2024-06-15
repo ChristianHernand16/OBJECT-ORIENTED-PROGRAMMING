@@ -18,10 +18,10 @@ public class PagoTransferenciaBancaria implements SistemaPago {
     }
 
     public void verificarPago() {
-        System.out.println("Pago realizado Correctamete por medio de Transferencia Bancaria");
+        System.out.println("Pago realizado Correctamete por medio de Transferencia Bancaria ");
     }
 
     public void confirmarPago() {
-        System.out.println("Pago confirmado Correctamete por medio de Transferencia Bancaria");
+        System.out.println("Pago confirmado Correctamete por medio de Transferencia Bancaria ");
     }
 }
